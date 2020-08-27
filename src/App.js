@@ -3,6 +3,7 @@ import './App.css';
 import Courses from "./Components/Courses/Courses";
 import Cart from "./Components/Cart/Cart";
 import {Container, Row, Col} from "react-bootstrap";
+import Header from "./Components/Header/Header";
 
 function App() {
 
@@ -14,19 +15,13 @@ function App() {
 
     }
 
-    const headerStyle = {
-        "borderBottom": "1px solid lightgreen",
-        "padding": "15px 0",
-        "marginBottom": "15px"
-    };
+
 
     return (
         <div className="App">
             <Container>
                 <Row>
-                    <Col sm={12} style={headerStyle}>
-                        <h1 className="text-center">Our Online Class</h1>
-                    </Col>
+                    <Header/>
                     <Col sm={8}>
                         <Courses cart={cart} handleCart={handleCart}/>
                     </Col>
