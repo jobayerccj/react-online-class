@@ -14,10 +14,19 @@ function App() {
 
     }
 
+    const headerStyle = {
+        "borderBottom": "1px solid lightgreen",
+        "padding": "15px 0",
+        "marginBottom": "15px"
+    };
+
     return (
         <div className="App">
             <Container>
                 <Row>
+                    <Col sm={12} style={headerStyle}>
+                        <h1 className="text-center">Our Online Class</h1>
+                    </Col>
                     <Col sm={8}>
                         <Courses cart={cart} handleCart={handleCart}/>
                     </Col>

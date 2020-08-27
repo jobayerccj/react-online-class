@@ -6,7 +6,8 @@ class Cart extends Component {
 
         return (
             <div>
-                <h1>Cart</h1>
+                <br/>
+                <h2>Cart</h2>
                 <p><b>Total Course purchased:</b> {cart.length}</p>
                 <p><b>Total Price: $</b>
                     {

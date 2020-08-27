@@ -10,7 +10,7 @@ class Courses extends Component {
 
         return (
             <div>
-                <h1>Courses</h1>
+                <h2>Available Courses</h2>
 
                     {
                         courses.map(course =>
